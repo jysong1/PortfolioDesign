@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Responsive Portfolio Design by Jin Young Song -->
-	<title>Portfolio Design Test</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<title>Second Portfolio</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-	<header class="header">
-			<h1>Artist Name</h1>
-			<h2>Comics Artist  |  Illustrator</h2>
-			<nav class="nav">
-				<ul>
-					<li><a href="index.html">Gallery</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="gallery-menu">
-					<ul>
-						<li>
-							<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733297/22014-01-27-Issue12PageCover.jpg.230x230_q90_crop_offset-(2,%200)_resize_to-(234,%20332).jpg" alt="this is an awesome image"><div class="description"></a><p>Evil Diva</p></div>
-						</li>
-						<li>
-							<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733185/DesignAGoatlingCancer.png.230x230_q90_crop_offset-(87,%2050)_resize_to-(397,%20397).png" alt="this is an awesome image"></a><div class="description"><p>Goatling Designs</p></div>
-						</li>
-						<li>
-							<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733192/tumblr_mx6j76IU781r3dyiwo1_1280.jpg.230x230_q90_crop_offset-(0,%200)_resize_to-(230L,%20238).jpg"></a><div class="description"><p>Illustrations</p></div>
-						</li>
-						<li>
-							<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733199/1tumblr_mj5lcqivY01r3dyiwo1_1280.jpg.230x230_q90_crop_offset-(10,%200)_resize_to-(405,%20252).jpg" alt="this is an awesome image"></a><div class="description"><p>Sketches</p></div>
-						</li>
-						<li>
-							<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733213/Capture.JPG.230x230_q90_crop_offset-(56,%2066)_resize_to-(347,%20401).jpg" alt="this is an awesome image"></a><div class="description"><p>3D Modeling</p></div>
-						</li>
-					</ul>
-			</div>
+<div class="grid-container"> <!-- start of big grid container ================-->
+	<div class="grid-3">	
+		<div class="main-header">
+			<img class="artist-pic" src="https://media.allyou.net/26318/images/2735043/ironfist.png">
+			<h1><a href="#">Artist Name</a></h1>
+			<h2>Comics Artist | Illustrator</h2>
+			<ul class="main-nav">
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="grid-9">
+		<div class="grid-container">
+			<ul class="gallery-menu">
+				<li>
+					<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733297/22014-01-27-Issue12PageCover.jpg.230x230_q90_crop_offset-(2,%200)_resize_to-(234,%20332).jpg" alt="this is an awesome image"></a>
+					<div class="description"><p>Evil Diva</p></div>
+				</li>
+				<li>
+					<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733185/DesignAGoatlingCancer.png.230x230_q90_crop_offset-(87,%2050)_resize_to-(397,%20397).png" alt="this is an awesome image"></a>
+					<div class="description"><p>Goatling Designs</p></div>
+				</li>
+				<li>
+					<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733192/tumblr_mx6j76IU781r3dyiwo1_1280.jpg.230x230_q90_crop_offset-(0,%200)_resize_to-(230L,%20238).jpg"></a>
+					<div class="description"><p>Illustrations</p></div>
+				</li>
+				<li>
+					<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733199/1tumblr_mj5lcqivY01r3dyiwo1_1280.jpg.230x230_q90_crop_offset-(10,%200)_resize_to-(405,%20252).jpg" alt="this is an awesome image"></a>
+					<div class="description"><p>Sketches</p></div>
+				</li>
+				<li>
+					<a href="#"><img class="gallery-img" src="https://media.allyou.net/26318/images/2733213/Capture.JPG.230x230_q90_crop_offset-(56,%2066)_resize_to-(347,%20401).jpg" alt="this is an awesome image"></a>
+					<div class="description"><p>3D Modeling</p></div>
+				</li>
+			</ul>
+	</div>
+</div> <!-- end of big grid container ========================================-->
 
-	</header>
-
-	<footer class="footer">
-		<p>Rachel Tibbs &copy; Images 2014 All Rights Reserved.</p> 
+	<footer class="main-footer">
+		<p>&copy;2014 Rachel Tibbs</p>
 	</footer>
 </body>
-
 </html>

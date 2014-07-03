@@ -1,6 +1,11 @@
+/* Color Palette
+=============================== */
+/* General Style
+=============================== */
 body {
   position: relative;
-  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #262626; }
   body h1 {
     text-transform: uppercase;
@@ -13,16 +18,21 @@ body {
     color: #dedede;
     margin-bottom: 16px; }
 
+/* For Mobile Devices
+=============================== */
 .header {
-  position: inline-block;
-  background: #6cf;
   background-color: #262626;
-  width: 100%;
-  margin: 0;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-left: 0;
+  background-color: red; }
+  .header .artist-pic {
+    display: none; }
+
+.nav {
+  text-align: center; }
 
 .nav a {
-  background-color: #FFCBCB;
+  background-color: #ffcbcb;
   display: block;
   margin: 10px;
   text-align: center;
@@ -39,7 +49,6 @@ body {
 
 .gallery-menu {
   text-align: center;
-  width: 100%;
   padding-top: 60px; }
   .gallery-menu .gallery-img {
     padding: 0;
@@ -66,3 +75,36 @@ body {
     text-align: center;
     color: #dedede;
     font-size: 0.8em; }
+
+/* For Larger Devices
+=============================== */
+@media (min-width: 768px) {
+  .header {
+    padding-top: 80px;
+    height: 100%; }
+    .header h2, .header .artist-pic {
+      text-align: left;
+      padding-left: 60px; }
+    .header h1 {
+      text-align: left;
+      padding-left: 40px;
+      font-size: 2.5em; }
+    .header h2 {
+      font-size: 1.2em;
+      padding-left: 60px; }
+    .header .artist-pic {
+      display: inline-block;
+      max-width: 240px;
+      padding-top: 20px; }
+    .header .nav {
+      padding-left: 40px;
+      padding-top: 20px;
+      max-width: 320px; }
+
+  .gallery-menu {
+    text-align: normal;
+    background-color: blue; }
+    .gallery-menu .gallery-img {
+      position: relative;
+      display: inline-block;
+      width: 360px; } }
