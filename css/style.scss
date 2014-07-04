@@ -44,23 +44,25 @@ body {
 		margin: 2px;
 		padding: 10px;
 		font-family: 'Lato', sans-serif;
-		font-weight: 700;
-		font-size: 1.1em;
+		font-weight: 700; font-size: 1.1em;
 		color: $primary-color;
 		text-decoration: none;
 		border: 2px black solid;
 		letter-spacing: 5px;
+		&:hover {
+			border: inset 1px #fff;
+		}
 	}
 }
 .gallery-menu {
 	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 100px;
+	#overlay {display: none;}
 	.gallery-img {
 		padding-bottom: 0;
 		margin: 0;
 		border-radius: 30%;
-		border: 2px #c8c8c8 solid;
 		max-width: 300px;
 		min-width: 100px;
 	}
@@ -79,6 +81,8 @@ body {
 	height: 30px;
 	text-align: center;
 	background: $primary-color;
+	clear: both;
+	padding:1% 0 1% 0; 
 	p {
 		font-family: 'Lato', sans-serif;	
 		color: $text-color;
@@ -94,8 +98,9 @@ body {
 
 	.main-header {
 		padding-top: 150px;
-		padding-left: 20px;
+		padding-left: 50px;
 		margin: 0;
+		min-width: 230px;
 		max-width: 300px;
 		.artist-pic {
 			display: inline-block;
@@ -118,24 +123,60 @@ body {
 				width: 90%;
 				&:hover {
 					border: 2px white solid;
+					transition: 0.3s ease;
 				}
 			}
 		}
 	}
+
+	#overlay {
+	  background:rgba(0,0,0,0.8);
+	  width:100%;
+	  height:100%;
+	  position:absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  text-align:center;
+	  border-radius: 30%;
+	  display: none;
+	  p {
+		color: white;
+		font-size: 2em;
+		text-decoration: none;
+		}
+	}
 	.gallery-menu {
 		padding-top: 70px;
-		padding-left: 70px;
+		padding-left: 30px;
+		padding-right: 100px;
 		li {
 			padding-bottom: 20px;
-			text-align: left;
+			display: inline-block;
+			padding: 20px 20px;
+			position: relative;
+			.gallery-img, .special {
+				min-width: 300px;
+				max-width: 400px;
+				position: relative;
+				overflow: hidden;
+				max-height: 300px;	
+			}
+			.special:hover {
+				#overlay { display: initial; }
+				#caption { display: initial; }
+				.gallery-img {
+					filter: grayscale(100%);
+				}
+				
+			}
+			.description {
+				display: none;
+			}
 		}
-		.gallery-img {
-			max-width: 260px;
-		}
-		.description { display: none; }
 	}
 }
-
 
 @media (min-width: 1px) and (max-width: 767px)  {
 	.main-nav li {
