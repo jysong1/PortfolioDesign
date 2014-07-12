@@ -1,6 +1,6 @@
 /* Color Palette
 =============================== */
-/* Page Styles
+/* Page Styles (Mobile First)
 ================================ */
 * {
   -moz-box-sizing: border-box;
@@ -9,10 +9,11 @@
 body {
   font: normal 1em/1.5 sans-serif;
   color: #222;
-  background-color: #262626;
+  background-color: #141414;
   margin: 0;
   padding: 0;
-  height: 100%; }
+  height: 100%;
+  text-align: center; }
 
 .main-header {
   padding-bottom: 0;
@@ -39,18 +40,30 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: 1.1em;
-    color: #262626;
+    color: #141414;
     text-decoration: none;
     border: 2px black solid;
     letter-spacing: 5px; }
     .main-header .main-nav a:hover {
-      border: inset 1px #fff; }
+      background-color: #000;
+      color: #dedede;
+      border: 2px solid #dedede; }
+  .main-header .social-media {
+    padding-top: 20px; }
+    .main-header .social-media ul li {
+      display: inline-block;
+      padding: 10px 10px; }
+    .main-header .social-media img {
+      width: 32px;
+      height: 32px; }
 
 .gallery-menu {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 100px; }
   .gallery-menu #overlay {
+    display: none; }
+  .gallery-menu p {
     display: none; }
   .gallery-menu .gallery-img {
     padding-bottom: 0;
@@ -61,18 +74,21 @@ body {
   .gallery-menu .description {
     text-align: center; }
     .gallery-menu .description p {
+      text-decoration: none;
+      display: block;
       color: #dedede;
       font-size: 1.4em;
       font-family: 'Montserrat', sans-serif;
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 30px;
+      margin-top: 4px; }
 
 .main-footer {
   width: 100%;
-  height: 30px;
+  height: 40px;
   text-align: center;
-  background: #262626;
-  clear: both;
-  padding: 1% 0 1% 0; }
+  background: #141414;
+  clear: both; }
   .main-footer p {
     font-family: 'Lato', sans-serif;
     color: #dedede;
@@ -82,16 +98,19 @@ body {
 /* Page Styles for Larger Devices
 ================================== */
 @media (min-width: 768px) {
+  .content {
+    width: 80%;
+    text-align: center; }
+
   .main-header {
-    padding-top: 150px;
-    padding-left: 50px;
-    margin: 0;
+    padding-top: 130px;
     min-width: 230px;
-    max-width: 300px; }
+    max-width: 300px;
+    position: absolute; }
     .main-header .artist-pic {
       display: inline-block;
-      padding-bottom: 4px;
-      max-width: 214px; }
+      padding-bottom: 20px;
+      max-width: 220px; }
     .main-header h1 {
       margin: 0; }
     .main-header h2 {
@@ -99,53 +118,45 @@ body {
     .main-header .main-nav a {
       margin-top: 12px;
       margin-left: 10px;
-      padding: 4px;
+      padding: 6px;
       color: #dedede;
-      background-color: #262626;
+      background-color: #141414;
       width: 90%; }
       .main-header .main-nav a:hover {
         border: 2px white solid;
-        transition: 0.3s ease; }
+        transition: 0.6s ease; }
+    .main-header .main-nav .selected {
+      border: 2px white solid; }
 
   #overlay {
     background: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+    top: 20px;
     border-radius: 30%;
-    display: none; }
+    text-align: center;
+    padding-top: 70px;
+    border: 2px solid #dedede; }
     #overlay p {
-      color: white;
-      font-size: 2em;
-      text-decoration: none; }
+      font-size: 1.8em;
+      color: #eee;
+      padding-top: 20px;
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif; }
 
   .gallery-menu {
     padding-top: 70px;
-    padding-left: 30px;
-    padding-right: 100px; }
+    padding-right: 100px;
+    padding-left: 80px; }
     .gallery-menu li {
-      padding-bottom: 20px;
       display: inline-block;
       padding: 20px 20px;
       position: relative; }
-      .gallery-menu li .gallery-img, .gallery-menu li .special {
+      .gallery-menu li .gallery-img, .gallery-menu li .overlay-container {
         min-width: 300px;
-        max-width: 400px;
-        position: relative;
-        overflow: hidden;
         max-height: 300px; }
-      .gallery-menu li .special:hover #overlay {
-        display: initial; }
-      .gallery-menu li .special:hover #caption {
-        display: initial; }
-      .gallery-menu li .special:hover .gallery-img {
-        filter: grayscale(100%); }
-      .gallery-menu li .description {
+      .gallery-menu li .description p {
         display: none; } }
 @media (min-width: 1px) and (max-width: 767px) {
   .main-nav li {

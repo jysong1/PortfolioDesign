@@ -2,23 +2,20 @@
 //Solution: Create an overlay with the large image - Lightbox
 
 var $overlay = $('<div id="overlay"></div>');
-// var $image = $("<img>");
-var $caption = $('<p id="caption">HIIIIII</p>');
+var $caption = $('<p></p>');
 
+//add caption to overlay
 $overlay.append($caption);
 
-$(".special").append($overlay);
 
+//caption event on hovering gallery image
+$(".gallery-menu a").hover(function() {
 
+	$(this).append($overlay);
+	$(overlay).fadeIn(200);
 
-
-// $("div[class |= 'special']").hover(function() {
-//   //Hide the overlay
-//   $overlay.toggle();
-// });
-
-
-
-
-
-
+	var captionText = $(this).children("div").children("img").attr("alt");
+	$caption.text(captionText);
+}, function() {
+	$(overlay).toggle();
+});
