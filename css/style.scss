@@ -8,6 +8,8 @@ $accent-color: #DE4E96;
 /* Page Styles (Mobile First)
 ================================ */
 
+// ------------------------------------- Gallery Page ----- //
+
 * {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -118,6 +120,12 @@ body {
 	}
 }
 
+// ------------------------------------- End Gallery Page ----- //
+
+
+
+// ------------------------------------- Contact Page ----- //
+
 .form-container {
 	text-align: center;
 	background-color: darken($primary-color, 2%);
@@ -195,6 +203,11 @@ textarea {
 	border: 3px solid $accent-color;
 }
 
+// ------------------------------------- End Contact Page ----- //
+
+
+// ------------------------------------- About Page ----- //
+
 .about-artist {
 	margin-top: 60px;
 	position: relative;
@@ -213,7 +226,7 @@ textarea {
 	font-size: 1.3em;
 }
 
-
+// ------------------------------------- End About Page ----- //
 
 
 /* Page Styles for Larger Devices
