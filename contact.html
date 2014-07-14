@@ -40,33 +40,38 @@
 		<div class="grid-6">
 			<div class="grid-container">
 				<div class="form-container">
-					<form class="form">
+					<div id="form-caption"><p id="contact-me">Hire Me!</p>
+						<p id="email-address">I am also open for commissions.</p>
+						<p>artistname@email.com</p>
+					</div>
 
-						<p class="name">
-							<input name="name" type="text" class="">
-						</p>
-
-						<p class="email">
-							<input name="name" type="email">
-						</p>
-
-						<p class="text">
-							<textarea name="name" type="text"></textarea>
-						</p>
-
-						<div class="submit">
-							<input type="submit" value="SEND" id="button-blue">
-						</div>
-
-					</form>
+					<div class="form-main">
+						<form class="form">
+						
+							<p class="name">
+								<input name="name" type="text" placeholder="Name" class="user-input">
+							</p>
+						
+							<p class="email">
+								<input name="email" type="email" placeholder="Email" class="user-input">
+							</p>
+						
+							<p class="text">
+								<textarea name="text" type="text" placeholder="Message" class="message-input"></textarea>
+							</p>
+						
+							<div class="submit">				
+								<input type="submit" value="SEND" id="button">
+								<div class="ease"></div>
+							</div>
+						
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<footer class="main-footer">		
-		<p>All Images &copy; 2014 Rachel Tibbs</p>
-	</footer>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>

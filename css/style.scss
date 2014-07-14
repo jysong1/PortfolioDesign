@@ -2,7 +2,7 @@
 =============================== */
 $primary-color: #141414;
 $text-color: #dedede;
-$accent-color: #FFCBCB;
+$accent-color: #DE4E96;
 
 
 /* Page Styles (Mobile First)
@@ -11,6 +11,7 @@ $accent-color: #FFCBCB;
 * {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
 body {
 	font: normal 1em/1.5 sans-serif;
@@ -19,13 +20,16 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	text-align: center;
+}
 
+.content {
+	padding-bottom: 150px;
 }
 .main-header {
 	padding-bottom: 0;
 	text-align: center;
 	.artist-pic { display: none; }
+	min-height: 100%;
 	h1 a {
 		color: $text-color;
 		text-decoration: none;
@@ -40,6 +44,8 @@ body {
 		font-weight: 500;
 	}
 	.main-nav a {
+		min-height: 100%;
+		position: relative;
 		background-color: $accent-color;
 		display: block;
 		text-align: center;
@@ -97,13 +103,13 @@ body {
 	}
 }
 .main-footer {
-	width: 100%;
 	height: 40px;
 	text-align: center;
 	background: $primary-color;
 	clear: both;
 	position: relative;
 	margin-top: -7.5em;
+	bottom: 0;
 	p {
 		font-family: 'Lato', sans-serif;	
 		color: $text-color;
@@ -113,11 +119,85 @@ body {
 }
 
 .form-container {
-	background-color: #FFCBCB;
-	margin-top: 120px;
-	padding-top: 30px;
-	height: 100%;
+	text-align: center;
+	background-color: darken($primary-color, 2%);
+	margin-top: 40px;
+	padding: 20px 20px;
+	position: relative;
+	#form-caption {
+		color: $text-color;
+		font-family: 'Montserrat', sans-serif
+	}
+	#contact-me {
+		margin-bottom: 10px;
+		font-size: 3em;
+		letter-spacing: 2px;
+		font-weight: 700;
+		letter-spacing: 5px;
+	}
+	#email-address {
+		font-size: 1em;
+		font-weight: 200;
+	}
+	.form-main {
+		text-align: center;
+		width: 100%;
+		padding: 10px;
+	}
 }
+textarea {
+	width: 100%; height: 150px;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	&:focus {outline: 3px solid $accent-color;}
+	background-color: $text-color;
+}
+.user-input {
+	background-color: $text-color;
+	width: 100%;
+	height: 40px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: $primary-color;
+	outline: none;
+	&:focus {
+		outline: 3px solid $accent-color;
+	}
+}
+#button {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 100%;
+	height: 60px;
+	background-color: $accent-color;
+	outline: none;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	letter-spacing: 7px;
+}
+
+#button:hover {
+	background-color: rgba(0,0,0,0);
+	color: $text-color;
+}
+
+.ease {
+	margin-top: -60px;
+	width: 0px;
+	height: 60px;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.submit:hover .ease {
+	width: 100%;
+	background-color: $primary-color;
+	border: 3px solid $accent-color;
+}
+
+
 
 
 /* Page Styles for Larger Devices
