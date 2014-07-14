@@ -121,7 +121,6 @@ body {
     font-size: 1em;
     font-weight: 200; }
   .form-container .form-main {
-    text-align: center;
     width: 100%;
     padding: 10px; }
 
@@ -156,7 +155,8 @@ textarea {
   border: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700px;
-  letter-spacing: 7px; }
+  letter-spacing: 7px;
+  font-size: 1.5em; }
 
 #button:hover {
   background-color: rgba(0, 0, 0, 0);
@@ -237,7 +237,13 @@ textarea {
         min-width: 280px;
         max-height: 280px; }
       .gallery-menu li .description p {
-        display: none; } }
+        display: none; }
+
+  .form-container {
+    margin-left: 140px;
+    margin-top: 110px;
+    max-width: 660px;
+    padding: 26px; } }
 @media (min-width: 1px) and (max-width: 767px) {
   .main-nav li {
     margin-top: 12px; } }

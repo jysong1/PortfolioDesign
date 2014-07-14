@@ -140,7 +140,6 @@ body {
 		font-weight: 200;
 	}
 	.form-main {
-		text-align: center;
 		width: 100%;
 		padding: 10px;
 	}
@@ -176,13 +175,12 @@ textarea {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700px;
 	letter-spacing: 7px;
+	font-size: 1.5em;
 }
-
 #button:hover {
 	background-color: rgba(0,0,0,0);
 	color: $text-color;
 }
-
 .ease {
 	margin-top: -60px;
 	width: 0px;
@@ -280,7 +278,17 @@ textarea {
 			.description p {display: none;}
 		}
 	}
+	
+	.form-container {
+		margin-left: 140px;
+		margin-top: 110px;
+		max-width: 660px;
+		padding: 26px;
+	}
+
 }
+
+
 
 @media (min-width: 1px) and (max-width: 767px)  {
 	.main-nav li {
