@@ -88,12 +88,20 @@ body {
   height: 40px;
   text-align: center;
   background: #141414;
-  clear: both; }
+  clear: both;
+  position: relative;
+  margin-top: -7.5em; }
   .main-footer p {
     font-family: 'Lato', sans-serif;
     color: #dedede;
     padding-bottom: 10px;
     font-size: 0.9em; }
+
+.form-container {
+  background-color: #FFCBCB;
+  margin-top: 120px;
+  padding-top: 30px;
+  height: 100%; }
 
 /* Page Styles for Larger Devices
 ================================== */
@@ -130,12 +138,11 @@ body {
 
   #overlay {
     background: rgba(0, 0, 0, 0.8);
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     position: absolute;
     top: 20px;
     border-radius: 30%;
-    text-align: center;
     padding-top: 70px;
     border: 2px solid #dedede; }
     #overlay p {
@@ -147,15 +154,16 @@ body {
 
   .gallery-menu {
     padding-top: 70px;
-    padding-right: 100px;
-    padding-left: 80px; }
+    margin-left: 100px;
+    float: left; }
     .gallery-menu li {
       display: inline-block;
-      padding: 20px 20px;
-      position: relative; }
-      .gallery-menu li .gallery-img, .gallery-menu li .overlay-container {
-        min-width: 300px;
-        max-height: 300px; }
+      padding: 20px;
+      position: relative;
+      float: left; }
+      .gallery-menu li .gallery-img {
+        min-width: 280px;
+        max-height: 280px; }
       .gallery-menu li .description p {
         display: none; } }
 @media (min-width: 1px) and (max-width: 767px) {

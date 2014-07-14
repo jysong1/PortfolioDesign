@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio Design Test</title>
+	<title>Rachel Tibbs</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="css/grid.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
+	<div class="grid-container content">
 
-	<header>
-		<a href="index.html" id="logo">
-			<h1>Jin Young Song</h1>
-		</a>
-		<nav>
-			<ul>
-				<li><a href="index.html">Portfolio</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html" class="selected">Contact</a></li>
-			</ul>	
-		</nav>
-	</header>
+		<div class="grid-3">	
+			<div class="main-header">
+				<a href="index.html"><img class="artist-pic" src="https://media.allyou.net/26318/images/2735043/ironfist.png"></a>
+				<h1><a href="#">Rachel Tibbs</a></h1>
+				<h2>Comics Artist | Illustrator</h2>
+				<ul class="main-nav">
+					<li><a href="index.html">Gallery</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#" class="selected">Contact</a></li>
+				</ul>
+				<div class="social-media">
+					<ul>
+						<a href="https://facebook.com"><li><img src="img/facebook.png"></li></a>
+						<a href="https://vanillycake.tumblr.com/"><li><img src="img/tumblr.png"></li></a>
+						<a href="http://twitter.com"><li><img src="img/twitter.png"></li></a>
+						<a href="https://dribbble.com"><li><img src="img/dribbble.png"></li></a>
+						<a href="https://vimeo.com"><li><img src="img/vimeo.png"></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-	<p>This is the contact page</p>
+		<div class="grid-2"></div>
 
-	
+		<div class="grid-6">
+			<div class="grid-container">
+				<div class="form-container">
+					<form class="form">
 
+						<p class="name">
+							<input name="name" type="text" class="">
+						</p>
 
+						<p class="email">
+							<input name="name" type="email">
+						</p>
+
+						<p class="text">
+							<textarea name="name" type="text"></textarea>
+						</p>
+
+						<div class="submit">
+							<input type="submit" value="SEND" id="button-blue">
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="main-footer">		
+		<p>All Images &copy; 2014 Rachel Tibbs</p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
-
 </html>
