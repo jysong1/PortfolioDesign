@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio Design Test</title>
+	<title>Rachel Tibbs</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="css/grid.css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
+	<div class="grid-container content">
 
-	<header>
-		<a href="index.html" id="logo">
-			<h1>Jin Young Song</h1>
-		</a>
-		<nav>
-			<ul>
-				<li><a href="index.html">Portfolio</a></li>
-				<li><a href="about.html" class="selected">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>	
-		</nav>
-	</header>
+		<div class="grid-3">	
+			<div class="main-header">
+				<a href="index.html"><img class="artist-pic" src="https://media.allyou.net/26318/images/2735043/ironfist.png"></a>
+				<h1><a href="#">Rachel Tibbs</a></h1>
+				<h2>Comics Artist | Illustrator</h2>
+				<ul class="main-nav">
+					<li><a href="index.html">Gallery</a></li>
+					<li><a href="about.html" class="selected">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<div class="social-media">
+					<ul>
+						<a href="https://facebook.com"><li><img src="img/facebook.png"></li></a>
+						<a href="http://vanillycake.tumblr.com"><li><img src="img/tumblr.png"></li></a>
+						<a href="http://twitter.com"><li><img src="img/twitter.png"></li></a>
+						<a href="https://dribbble.com"><li><img src="img/dribbble.png"></li></a>
+						<a href="http://vanillycake.deviantart.com/"><li><img src="img/deviant-art.png"></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="grid-8">
+			<div class="about-artist">
+				<h1>About the Artist</h1>
+				<img src="https://media.allyou.net/26318/images/2735304/face.png.650x5000_q90.png">
+			</div>
+			<div class="bio">
+				<p> I began my artistic career when I was but a wee babe. The moment my motor skills were capable enough to grasp a pencil I never let it go. To this day I still hold the remains of the very same pencil. Just kidding I just couldn't stop drawing. I knew at an early age that art is what I wanted to make my career, and at 21 my goal has not wavered.</p>
+				<p>I hope you enjoy my artwork as much as I have making it!</p>
+			</div>
+		</div>
+	</div>
 
-	<p>This is the about page</p>
-	
 
-
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
-
 </html>

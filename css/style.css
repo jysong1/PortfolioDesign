@@ -175,6 +175,22 @@ textarea {
   background-color: #141414;
   border: 3px solid #de4e96; }
 
+.about-artist {
+  margin-top: 60px;
+  position: relative;
+  padding: 0; }
+  .about-artist h1 {
+    color: #dedede;
+    text-align: center;
+    padding-bottom: 4px; }
+
+.bio {
+  padding: 30px;
+  color: #dedede;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 1.3em; }
+
 /* Page Styles for Larger Devices
 ================================== */
 @media (min-width: 768px) {
