@@ -1,9 +1,9 @@
-//Problem: User when clicking on image goes to a dead end
-//Solution: Create an overlay with the large image - Lightbox
 
 var $overlay = $('<div id="overlay"></div>');
 var $caption = $('<p></p>');
 
+
+//======= Gallery Menu button animation ========//
 //add caption to overlay
 $overlay.append($caption);
 
@@ -19,3 +19,5 @@ $(".gallery-menu a").hover(function() {
 }, function() {
 	$(overlay).toggle();
 });
+
+
