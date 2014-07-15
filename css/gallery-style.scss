@@ -11,7 +11,7 @@
 }
 
 .main-gallery {
-	list-style: none;
+	&:hover img {opacity: 0.2;}
 	li {
 		text-align: center;
 		max-width: 100%;
@@ -20,8 +20,49 @@
 		padding: 4px;
 		margin: 0;
 		position: relative;
+
 	}
 }
+.gallery-container img {
+	&:hover {opacity: 1; cursor: pointer;}
+}
+
+/* For Goatlings gallery */
+@media screen and (min-width: 768px) {
+	.main-gallery-goatlings {	
+		&:hover img {opacity: 0.2;}
+		-webkit-column-count: 2;
+		-webkit-column-gap: 0px;
+		-moz-column-count: 2;
+		-moz-column-gap: 0px;
+		column-count: 2;
+		column-gap: 0px;
+	}
+	.gallery-container img {
+		&:hover {opacity: 1; cursor: pointer;}
+	}
+}
+
+/* For 3D Modeling gallery */
+.main-gallery-modeling li {padding: 0 20px;}
+
+@media screen and (min-width: 768px) {
+	.main-gallery-modeling {
+		&:hover img {opacity: 0.2;}	
+		-webkit-column-count: 2;
+		-webkit-column-gap: 0px;
+		-moz-column-count: 2;
+		-moz-column-gap: 0px;
+		column-count: 2;
+		column-gap: 0px;
+	}
+	.gallery-container img {
+		&:hover {opacity: 1; cursor: pointer;}
+	}
+}
+
+
+/* Meida Queries ======================== */
 
 @media screen and (min-width: 768px) {
 	.main-gallery {
@@ -70,32 +111,6 @@
 	}
 }
 
-/* For Goatlings gallery */
-@media screen and (min-width: 768px) {
-	.main-gallery-goatlings {	
-		-webkit-column-count: 2;
-		-webkit-column-gap: 0px;
-		-moz-column-count: 2;
-		-moz-column-gap: 0px;
-		column-count: 2;
-		column-gap: 0px;
-	}
 
-}
-/* For 3D Modeling gallery */
-
-.main-gallery-modeling li {padding: 0 20px;}
-
-@media screen and (min-width: 768px) {
-	.main-gallery-modeling {	
-		-webkit-column-count: 2;
-		-webkit-column-gap: 0px;
-		-moz-column-count: 2;
-		-moz-column-gap: 0px;
-		column-count: 2;
-		column-gap: 0px;
-	}
-
-}
 
 
