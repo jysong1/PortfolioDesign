@@ -28,6 +28,7 @@ body {
 	padding-bottom: 150px;
 }
 .main-header {
+	margin-right: 100px;
 	padding-bottom: 0;
 	text-align: center;
 	.artist-pic { display: none; }
@@ -47,7 +48,7 @@ body {
 	}
 	.main-nav a {
 		min-height: 100%;
-		position: relative;
+		//position: relative;
 		background-color: $accent-color;
 		display: block;
 		text-align: center;
